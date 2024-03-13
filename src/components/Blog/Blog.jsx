@@ -6,7 +6,8 @@ const Blog = ({blog, handleBookMarks}) => {
     
 
     return (
-        <div className='my-3 w-[90%] m-auto bg-white p-10'>
+        <>
+        <div className='my-5 w-[90%] m-auto bg-white p-10 rounded-lg'>
            <div className='w-[90%] m-auto'> 
            <div  className=' flex justify-center'> <img src={cover} alt="" /></div>
             <div className=' w-[97%]  justify-center  mt-2'>
@@ -21,7 +22,7 @@ const Blog = ({blog, handleBookMarks}) => {
                 </div>
                 <div className='w-[22%] flex justify-between '>
                     <p>{reading_time} min read</p>
-                    <button onClick={()=>handleBookMarks({blog})}><FaBookmark></FaBookmark></button>
+                    <button onClick={()=>handleBookMarks(blog)}><FaBookmark></FaBookmark></button>
                 </div>
                 </div>
             </div>
@@ -34,6 +35,8 @@ const Blog = ({blog, handleBookMarks}) => {
             </p>
             </div>
         </div>
+        <hr />
+        </>
     );
 };
 

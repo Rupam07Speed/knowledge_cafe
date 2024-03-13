@@ -19,8 +19,8 @@ function App() {
     <div className='w-[90%] m-auto'>
     <Header></Header>
     <div className='  lg:md:flex justify-between mt-4'>
-    <div className='w-[65%] bg-pink-300'><Blogs handleBookMarks={handleBookMarks}></Blogs></div>
-    <div className='w-[33%] bg-pink-300'><BookMarks bookMarks={bookMarks} ></BookMarks></div>
+    <div className='w-[65%]'><Blogs handleBookMarks={handleBookMarks}></Blogs></div>
+    <div className='w-[33%] h-full bg-slate-200 rounded-lg'><BookMarks bookMarks={bookMarks} ></BookMarks></div>
     </div>
     </div>
     </>
