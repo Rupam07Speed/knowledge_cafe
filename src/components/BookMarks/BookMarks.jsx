@@ -1,7 +1,6 @@
 
 import PropTypes from 'prop-types';
 const BookMarks = ({bookMarks}) => {
-    console.log(bookMarks)
     return (
        <div className='h-auto p-5'>
          <div>
@@ -20,6 +19,6 @@ const BookMarks = ({bookMarks}) => {
     );
 };
 BookMarks.propTypes = {
-    bookMarks : PropTypes.object
+    bookMarks : PropTypes.array
   };
 export default BookMarks;

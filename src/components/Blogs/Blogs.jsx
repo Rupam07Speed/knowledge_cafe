@@ -4,7 +4,7 @@ import Blog from "../Blog/Blog";
 
 
 const Blogs = (
-   { handleBookMarks} ) => {
+   { handleBookMarks,handleTimeSet} ) => {
     const [blogs,setBlogs] = useState([]);
 
     useEffect(() => {
@@ -21,14 +21,16 @@ const Blogs = (
 
             {
                 blogs.map(blog => <Blog key={blog.id} blog={blog}
-                    handleBookMarks={handleBookMarks}></Blog> )
+                    handleBookMarks={handleBookMarks}
+                    handleTimeSet={handleTimeSet}></Blog> )
             }
 
         </div>
     );
 };
 Blogs.propTypes = {
-    handleBookMarks : PropTypes.func
+    handleBookMarks : PropTypes.func,
+    handleTimeSet : PropTypes.func
 }
 
 export default Blogs;
